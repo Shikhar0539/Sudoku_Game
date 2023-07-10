@@ -40,6 +40,10 @@ bool is_move_valid(int sudoku[][N], int row , int col, int digit)
 {
     for(int i = 0 ; i < N ; i++)
     {
+        if(i == col)
+        {
+            continue;
+        }
         if(sudoku[row][i] == digit) // We are checking if the digit entered by the user is already present in the same row
         {
             return false;
@@ -48,6 +52,10 @@ bool is_move_valid(int sudoku[][N], int row , int col, int digit)
 
     for(int i = 0 ; i < N ; i++)
     {
+        if(i == row)
+        {
+            continue;
+        }
         if(sudoku[i][col] == digit) // We are checking if the digit entered by the user is already present in the same column
         {
             return false;
@@ -58,6 +66,10 @@ bool is_move_valid(int sudoku[][N], int row , int col, int digit)
     {
         for(int j = 0 ; j < 3 ; j++)
         {
+            if(i == row%3 && j == col%3)
+            {
+                continue;
+            }
             if(sudoku[row - row%3 + i][col - col%3 + j] == digit) // We are checking if the digit entered by the user is already present in that 3x3 block
             {
                 return false;
