@@ -226,11 +226,11 @@ void start(int new_board[][N] , bool& flag)
         if(!is_move_valid(new_board, row - 1, col - 1, digit)) // Checking if the move made is valid or not
         {
              mistakes_left--;
-             if(mistakes_left == 0)
+             if(mistakes_left == -1)
              {
              system("cls");
              print(new_board);
-             cout << endl << "Sorry you could not solve the puzzle because you have 0 attempts of mistakes left ! You can restart over and try again if you wish or view the solved sudoku !" << endl << endl;
+             cout << endl << "Sorry you could not solve the puzzle because you have utilized the maximum number of allowed mistake attempts ! You can restart over and try again if you wish or view the solved sudoku !" << endl << endl;
              return;
              }
              else
