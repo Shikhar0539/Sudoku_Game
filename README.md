@@ -1,4 +1,6 @@
 # Sudoku_Game
+<img width="923" alt="sudoku" src="https://github.com/Shikhar0539/Sudoku_Game/assets/97433999/09665259-2e8f-4fc7-9c3a-a9111edae79d">
+
 1. A user-friendly Sudoku Game developed using C++ technology.
 2. Sudoku Game is a 9x9 matrix puzzle where each number in every row , every column and every 3x3 sub-matrix should be unique and between 1 to 9 (1 and 9 inclusive).
 3. Here, user has to simply just enter the row number, column number and the digit that they want to place in.
