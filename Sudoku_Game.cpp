@@ -281,13 +281,13 @@ int main()
     system("title Sudoku Game"); // Sets the title of the command prompt to "Sudoku Game"
     system("color E4"); // Sets background color of command prompt to light yellow and text color to red
 
-    print(board);
+    print(board); //
 
     while(true)
     {
-        cout << "1. Play the Game" << endl;
-        cout << "2. Check the rules" << endl;
-        cout << "3. View the solved Sudoku if you are unable to solve it" << endl;
+        cout << "1. Play Game" << endl;
+        cout << "2. Check rules" << endl;
+        cout << "3. Unable to solve? View the solved sudoku" << endl;
         cout << "4. Quit" << endl << endl;
         cout << "Enter your option : 1 or 2 or 3 or 4 " << endl;
 
