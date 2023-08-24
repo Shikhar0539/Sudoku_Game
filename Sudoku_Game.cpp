@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstdlib>
-#include <cstring>
 
 using namespace std;
 
@@ -182,7 +180,7 @@ void start(int new_board[][N] , bool& flag)
 
         if(temp == 0)
         {
-            cout << endl << endl << "Number of mistakes left : " << mistakes_left << endl << endl;
+            cout << endl << endl << "Number of allowed mistakes left : " << mistakes_left << endl << endl;
             temp++;
         }
 
@@ -190,12 +188,12 @@ void start(int new_board[][N] , bool& flag)
         {
             if(helper_mistakes_left == mistakes_left + 1)
             {
-               cout << endl << endl << "Incorrect ! Number of mistakes left : " << mistakes_left << endl << endl;
+               cout << endl << endl << "Incorrect ! Number of allowed mistakes left : " << mistakes_left << endl << endl;
                helper_mistakes_left--;
             }
             else
             {
-               cout << endl << endl << "Correct ! Number of mistakes left : " << mistakes_left << endl << endl;
+               cout << endl << endl << "Correct ! Number of allowed mistakes left : " << mistakes_left << endl << endl;
             }
 
         }
