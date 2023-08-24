@@ -286,7 +286,7 @@ int main()
     while(true)
     {
         cout << "1. Play Game" << endl;
-        cout << "2. Check rules" << endl;
+        cout << "2. View rules" << endl;
         cout << "3. Unable to solve? View the solved sudoku" << endl;
         cout << "4. Quit" << endl << endl;
         cout << "Enter your option : 1 or 2 or 3 or 4 " << endl;
